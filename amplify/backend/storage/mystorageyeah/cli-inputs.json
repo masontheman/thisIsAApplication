@@ -1,0 +1,14 @@
+{
+  "resourceName": "mystorageyeah",
+  "policyUUID": "1a965e88",
+  "bucketName": "mysecondbucketyes",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

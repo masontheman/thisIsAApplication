@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "thisisaapplication07f5b85b": {}
+      },
+      "api": {
+        "thisisaapplication": {}
+      },
+      "storage": {
+        "mystorageyeah": {}
       }
     }
   }
