@@ -57,10 +57,8 @@
     "authProviders": [],
     "hostedUI": true,
     "hostedUIDomainName": "sg2fvo8vupmm",
-    "authProvidersUserPool": [
-      "Google"
-    ],
-    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
     "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://main.d3109ujwwlqr9s.amplifyapp.com/\",\"https://localhost:3000\"],\"LogoutURLs\":[\"https://main.d3109ujwwlqr9s.amplifyapp.com/\",\"https://localhost:3000\"]}"
   }
 }
