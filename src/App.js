@@ -72,13 +72,33 @@ async function signOut() {
 }
   return(
     <>
-      <Link to="/">Home</Link>
-      {/* <Link to="/worlduncensored">worlduncensored</Link> */}
-      <Link to="/profile">Profile</Link> 
-      <Link to="/signin">signin</Link>
-      <Link to="createvideo">New Video</Link>
-      <Button onClick={signOut}  >sign out</Button>
+    <header>
+      <nav className="bg-black text-white">
+          <div className="border-black flex items-center justify-between p-2">
+            <div className="flex items-center space-x-3">
+            <img src="Logo_World_Uncensored.png" alt="" className="hover:rounded-full"/>
+            <Link to="/" className="hover:text-red-700">Home</Link>
+            {/* <Link to="/worlduncensored">worlduncensored</Link> */}
+            <Link to="/profile" className="hover:text-red-700">Profile</Link> 
+            <Link to="/signin" className="hover:text-red-700">signin</Link>
+            <Link to="createvideo" className="hover:text-red-700">New Video</Link>
+            <button onClick={signOut}>sign out</button>
+            <img src="LogIn_SignUp.png" alt="" className="h-14 rounded-full"/>
+            </div>
+            <div className="flex items-center space-x-1">
+            <img src="lllllll.png" alt="" className="h-14 hover:rounded-full"/>
+            <input type="text" placeholder="Search World Uncensored" className="border w-80 min-w-max rounded-full text-black active:bg-red-700"/>
+            </div>
+          </div>
+      </nav>
+      </header>
       <Outlet/>
+      <footer className="flex justify-around bg-black text-white">
+            <p className="hover:text-red-700">World Uncensored &copy; 2023</p>
+            <a href="#" className="hover:text-red-700"><p>Twitter: @bloodgorepainn</p></a>
+        </footer>
     </>
   )
 }
+
+

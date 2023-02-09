@@ -43,6 +43,21 @@ const thisIsAusername = 'masonman8787'
       <Link to={`usersprofile/${video.username}`}>{video.username}</Link>
       </div>
     ))}</div> */}
+    <div className="grid grid-cols-4 gap-4 m-2 bg-black text-white">{videos.map((video) => (
+            <div className="flex-1 " key={video.id}>
+              <img src={video.video} alt="" className="rounded-3xl w-[480px] h-[360px]"/>
+              <div className="flex items-center">
+                <div className="m-1">
+                  <img src="https://source.unsplash.com/random/200x200" alt="" className="rounded-full h-10"/>
+                </div>
+                <div>
+                  <p>{video.title}</p>
+                  <p>{video.description}</p>
+                  <Link to={`usersprofile/${video.username}`}>{video.username}</Link>
+                </div>
+              </div>
+            </div>
+            ))}</div>
     </>
   );
 }

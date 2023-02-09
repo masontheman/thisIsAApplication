@@ -40,7 +40,9 @@ export default function CreateVideoPage() {
         getCurrentUser();
       },[]);   
   return (<>
-  <View as="form" margin="3rem 0" onSubmit={createAVideo}>
+  <View as="form" margin="3rem 0" 
+
+  onSubmit={createAVideo}>
   <Flex direction="row" justifyContent="center">
     <TextField
       name="title"
