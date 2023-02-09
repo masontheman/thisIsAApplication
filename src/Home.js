@@ -28,14 +28,7 @@ export function Home() {
 useEffect(() => {
   getHomePageVideos();
 },[]);
-const thisIsAusername = 'masonman8787'
   return (<>
-    <nav>
-    
-    <p>{thisIsAusername}</p>
-    <Link to={`usersprofile/${thisIsAusername}`}>{thisIsAusername}</Link>
-    </nav>
-    
     {/* <div>{videos.map((video) => (
       <div key={video.id}>
       <Image src={video.video} width="400" height="400"></Image>

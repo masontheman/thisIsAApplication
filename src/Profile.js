@@ -70,7 +70,7 @@ useEffect(() => {
     
 },[])
   return (<>
-    {/* <div>Profile</div>
+    <div>Profile</div>
     {profile ? <h1>{profile.data.userPSByUsername.items[0].username} 's Profile Page</h1> : <h1>Not a User</h1>}
     <div className="grid grid-cols-4 gap-4 m-2 bg-black text-white">{videos.map((video) => (
     <div className="flex-1 " key={video.id}>
@@ -86,7 +86,7 @@ useEffect(() => {
         </div>
       </div>
     </div>
-    ))}</div> */}
+    ))}</div>
     </>
   )
 }
