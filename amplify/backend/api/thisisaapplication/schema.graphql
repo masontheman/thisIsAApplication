@@ -8,3 +8,41 @@ type Note @model @auth(rules: [ { allow: public } ] ){
   description: String
   image: String
 }
+
+type Userr @model @auth(rules: [{ allow: public}]){
+  id: ID!
+  username: String! @index
+  pimage: String
+}
+
+type UserP @model @auth(rules: [{allow: public}]){
+  id: ID!
+  username: String! @index
+  contnet: String
+  followers: [Follower] @hasMany(indexName: "follows",fields: ["username"])
+  following: [Following] @hasMany(indexName: "following",fields: ["username"])
+}
+
+type Follower @model @auth(rules: [{allow: public}]){
+  id: ID!
+  fusername: String! @index(name: "follows")
+}
+type Following @model @auth(rules: [{allow: public}]){
+  id: ID!
+  follusername: String! @index(name: "following")
+}
+type Video @model @auth(rules: [{allow: public}]){
+  id: ID!
+  title: String
+  description: String
+  username: String! @index
+  video: String
+  comments: [Comment] @hasMany(indexName: "byPost", fields: ["id"])
+}
+type Comment @model @auth(rules: [{allow: public}]){
+  id: ID!
+  postID: ID! @index(name: "byPost", sortKeyFields: ["content"])
+  content: String!
+  username: String
+}
+
