@@ -74,7 +74,7 @@ useEffect(() => {
     {profile ? <h1>{profile.data.userPSByUsername.items[0].username} 's Profile Page</h1> : <h1>Not a User</h1>}
     <div className="grid grid-cols-4 gap-4 m-2 bg-black text-white">{videos.map((video) => (
     <div className="flex-1 " key={video.id}>
-      <img src={video.video} alt="" className="rounded-3xl w-[480px] h-[360px]"/>
+    <video src={video.video} alt="" className="rounded-3xl w-[480px] h-[360px]" controls/>
       <div className="flex items-center">
         <div className="m-1">
           <img src="https://source.unsplash.com/random/200x200" alt="" className="rounded-full h-10"/>
